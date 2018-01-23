@@ -11,33 +11,32 @@
   <body>
     <div class="container">
       <h1>Places we've been</h1>
-        <h2>input them</h2>
-          <form id="placeInput">
-            <label for="newPlace">New Place</label>
-            <input id="newPlace" type="text" class="form-control">
-
-            <label for="newLandmarks">Landmark:</label>
-            <input id="newLandmarks" type="text" class="form-control">
-
-            <label for="newTime">Year:</label>
-            <input id="newTime" type="text" class="form-control">
-
-            <label for="newNotes">Notes</label>
-            <input id="newNotes" type="text" class="form-control">
-
-            <button type="submit" class="btn">add</button>
-          </form>
+      <h2>input them</h2>
+        <form id="placeInput">
+          <label for="newPlace">Place:</label>
+          <input id="newPlace" type="text" class="form-control">
+          <label for="newLandmarks">Landmark:</label>
+          <input id="newLandmarks" type="text" class="form-control">
+          <label for="newTime">Year:</label>
+          <input id="newTime" type="text" class="form-control">
+          <label for="newNotes">Notes:</label>
+          <input id="newNotes" type="text" class="form-control">
+          <button type="submit" class="btn">Add</button>
+        </form>
           <br>
+        <div class="row">
+            <div class="col-md-6">
+            <h2>Places:</h2>
+            <ul id="places">
+            </ul>
+            </div>
+        </div>
 
-          <h2>Places:</h2>
-      <ul id="places">
-
-      </ul>
-      <div id="showDetails">
-        <p>Landmarks: <span class="landmark"></span></p>
-        <p>Year: <span class="year"></span></p>
-        <p>Notes: <span class="notes"></span></p>
-      </div>
+        <div class="col-md-6" id="showDetails">
+          <p>Landmarks: <span class="landmark"></span></p>
+          <p>Year: <span class="year"></span></p>
+          <p>Notes: <span class="notes"></span></p>
+        </div>
 
     </div>
   </body>
